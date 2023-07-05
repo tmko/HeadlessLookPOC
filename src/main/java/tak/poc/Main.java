@@ -14,8 +14,8 @@ import java.util.regex.Pattern;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class Main {
-    private static final BrowserType.LaunchOptions HEADLESS = new BrowserType.LaunchOptions().setHeadless(false);
-    private static final BrowserType.LaunchOptions HEADLIKE = new BrowserType.LaunchOptions().setHeadless(true);
+    private static final BrowserType.LaunchOptions HEADLESS = new BrowserType.LaunchOptions().setHeadless(true);
+    private static final BrowserType.LaunchOptions HEADLIKE = new BrowserType.LaunchOptions().setHeadless(false);
 
     public static void main(String[] args) {
         new Main().takeScreenShot();
